@@ -1,0 +1,170 @@
+/* Fonts */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f8f9fa; /* cor 1 */
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1e3d59; /* cor 2 */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #1e3d59; /* mesmo fundo do header */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Conteúdo principal */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif; /* fonte 3 */
+}
+
+main h2 {
+  margin-top: 0;
+  color: #1e3d59;
+}
+
+ul ul {
+  margin-left: 20px;
+}
+
+/* Galeria */
+.galeria-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.galeria-grid img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f0f0f0; /* cor 3 */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea, form select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  outline: none;
+  border-color: #1e3d59;
+}
+
+form input[type="submit"] {
+  background-color: #1e3d59;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #16324f;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1e3d59;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .galeria-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
